@@ -15,8 +15,8 @@ function renderHeader() {
 
 function renderNav() {
 
-    let menu = document.querySelector(".menu");
-    menu.classList.add("menu");
+    let menu = document.querySelector(".nav");
+    menu.classList.add("nav");
 
     let homeLink = document.createElement("p");
     homeLink.classList.add("nav-link");

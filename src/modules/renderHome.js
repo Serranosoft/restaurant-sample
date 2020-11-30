@@ -1,7 +1,7 @@
 function renderHome(content) {
 
     let wrapper = document.createElement("div");
-    wrapper.classList.add("wrapper");
+    wrapper.classList.add("wrapper-home");
     content.appendChild(wrapper);
 
     let contentTitle = document.createElement("p");

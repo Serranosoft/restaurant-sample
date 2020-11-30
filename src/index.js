@@ -27,9 +27,10 @@ const init = (() => {
 
 const render = (page) => {
 
+    clearScreen();
     switch(page) {
         case "home":
-            console.log("home");
+            renderHome(content);
             break;
         case "menu":
             renderMenu(content);
@@ -37,12 +38,15 @@ const render = (page) => {
         case "contact":
             console.log("contact");
             break;
-
     }
-
-
-
 };
+
+function clearScreen() {
+
+    while (content.firstChild) {
+        content.removeChild(content.firstChild);
+    }
+}
 
 
 

@@ -13,7 +13,7 @@
 }
 
 #content {
-    height: 100vh;
+    
     background: url("images/bg.jpg");
     background-size: cover;
     color: var(--pg);
@@ -50,7 +50,7 @@ header p:hover {
     cursor: pointer;
 }
 
-.menu {
+.nav {
     display: grid;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
     gap: 10px;
@@ -82,23 +82,13 @@ header p:hover {
     cursor: pointer;
 }
 
-.wrapper {
+.wrapper-home {
     max-width: 1250px;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
-.content-title::before {
-    display: table;
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-top: 2px solid var(--pg);
-    border-bottom: 2px solid var(--pg);
-    margin-bottom: 30px;
-    border-spacing: 1px;
-}
-
-.content-title {
+.content-title, .menu-title {
     text-align: center;
     font-size: 64px;
 }
@@ -107,6 +97,47 @@ header p:hover {
     text-align: center;
     margin-bottom: 20px;
     font-size: 22px;
+}
+
+/* MENU SECTION */
+
+
+
+.content::before {
+    display: table;
+    content: "";
+    width: 90%;
+    height: 3px;
+    border-top: 2px solid var(--pg);
+    border-bottom: 2px solid var(--pg);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-spacing: 1px;
+}
+.wrapper-menu {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.menu-title {
+    margin-bottom: 50px;
+}
+
+.dish {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 20px;
+    gap: 35px;
+    align-items: center;
+
+}
+
+.dish p {
+    font-size: 20px;
 }
 
 footer {
