@@ -38,7 +38,7 @@ header {
     color: var(--bg);
 }
 
-header p, footer p {
+header p, .footer p {
     font-size: 14px;
     text-indent: 50px;
 }
@@ -56,10 +56,10 @@ header p:hover {
     gap: 10px;
     align-items: center;
     padding: 50px;
-    background-color: #d8d3d0;
+    background-color: var(--bg);
 }
 
- .menu > * {
+.nav-link {
     width: 150px;
     justify-self: center;
     padding: 35px 20px;
@@ -74,7 +74,7 @@ header p:hover {
     transition: all 1000ms; 
 }
 
-.menu > *:hover {
+.nav-link:hover {
     box-shadow: 0 0 10px var(--pg);
     text-shadow: 1px 1px 2px var(--pg);
     letter-spacing: 2px;
