@@ -1,6 +1,7 @@
 import renderHome from "./modules/renderHome";
 import { renderHeader, renderFooter, renderNav } from "./modules/renderSchema";
 import renderMenu from "./modules/renderMenu";
+import renderStaff from "./modules/renderStaff";
 
 const content =  document.getElementById("content");
 
@@ -36,7 +37,7 @@ const render = (page) => {
             renderMenu(content);
             break;
         case "contact":
-            console.log("contact");
+            renderStaff(content);
             break;
     }
 };

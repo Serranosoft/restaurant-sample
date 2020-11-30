@@ -82,26 +82,26 @@ header p:hover {
     cursor: pointer;
 }
 
+/* HOME SECTION */
+
 .wrapper-home {
     max-width: 1250px;
     margin: 0 auto;
     min-height: 100vh;
 }
 
-.content-title, .menu-title {
+.content-title, .menu-title, .staff-title {
     text-align: center;
     font-size: 64px;
 }
 
-.home-info {
+.home-info, .staff-descr {
     text-align: center;
     margin-bottom: 20px;
     font-size: 22px;
 }
 
 /* MENU SECTION */
-
-
 
 .content::before {
     display: table;
@@ -139,6 +139,68 @@ header p:hover {
 .dish p {
     font-size: 20px;
 }
+
+.dish img {
+    transition: all 1000ms;
+}
+
+.dish img:hover {
+    transform: scale(1.2);
+}
+
+
+/* STAFF SECTION */
+
+.wrapper-staff {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.wrapper-staff p {
+    text-align: center;
+}
+
+.staff-form h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: medium none !important;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+    border-color: black;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: #FFF;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+
+.form-submit {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: var(--pg);
+    color: var(--bg);
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 200px;
+    max-width: 100%;
+    resize: none;
+}
+
 
 footer {
     width: 100%;
