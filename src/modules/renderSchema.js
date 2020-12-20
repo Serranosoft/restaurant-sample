@@ -1,3 +1,5 @@
+import render from '../index';
+
 const body = document.querySelector("body");
 
 function renderHeader() {
@@ -35,6 +37,16 @@ function renderNav() {
     contactLink.classList.add("contact-link")
     contactLink.innerHTML = "Info";
     menu.appendChild(contactLink);
+
+    document.querySelector(".home-link").addEventListener("click", () => {
+        render("home");
+    })
+    document.querySelector(".menu-link").addEventListener("click", () => {
+        render("menu");
+    })
+    document.querySelector(".contact-link").addEventListener("click", () => {
+        render("contact");
+    })
 
 }
 

@@ -13,17 +13,6 @@ const init = (() => {
     renderFooter();
     renderHome(content);
 
-    document.querySelector(".home-link").addEventListener("click", () => {
-        render("home");
-    })
-    document.querySelector(".menu-link").addEventListener("click", () => {
-        render("menu");
-    })
-    document.querySelector(".contact-link").addEventListener("click", () => {
-        render("contact");
-    })
-
-
 })();
 
 const render = (page) => {
@@ -48,6 +37,8 @@ function clearScreen() {
         content.removeChild(content.firstChild);
     }
 }
+
+export default render();
 
 
 
